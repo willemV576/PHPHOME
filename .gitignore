@@ -1,8 +1,22 @@
-# CakePHP 3
+# General PHP Project Ignores
+/vendor/
+composer.lock
 
+# PHPUnit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Laravel
+/bootstrap/cache/
+storage/
+
+# Symfony
+/var/
+config/packages/prod/
+
+# CakePHP 3
 /vendor/*
 /config/app.php
-
 /tmp/cache/models/*
 !/tmp/cache/models/empty
 /tmp/cache/persistent/*
@@ -13,13 +27,30 @@
 !/tmp/sessions/empty
 /tmp/tests/*
 !/tmp/tests/empty
-
 /logs/*
 !/logs/empty
 
 # CakePHP 2
-
 /app/tmp/*
 /app/Config/core.php
 /app/Config/database.php
 /vendors/*
+
+# IDE Specific Ignores
+# JetBrains IDEs (PhpStorm, IntelliJ)
+.idea/
+*.iml
+
+# VSCode
+.vscode/
+
+# Operating System Specific Ignores
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Log and Temporary Files
+*.log
+*.tmp
